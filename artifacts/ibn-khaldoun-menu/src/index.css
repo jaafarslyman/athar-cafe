@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @plugin "@tailwindcss/typography";
@@ -141,8 +141,8 @@
   --chart-4: 83 18% 42%;
   --chart-5: 29 27% 65%;
 
-  --app-font-sans: 'IBM Plex Sans Arabic', sans-serif;
-  --app-font-serif: 'Amiri', serif;
+  --app-font-sans: 'Zain', sans-serif;
+  --app-font-serif: 'Zain', sans-serif;
   --app-font-mono: Menlo, monospace;
   --radius: 0.5rem; /* 8px */
   --shadow-2xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0); /*replace with H S L */
@@ -466,7 +466,7 @@ button { font: inherit; }
   *,*::before,*::after { animation-duration:.01ms !important; transition-duration:.01ms !important; scroll-behavior:auto !important; }
 }
 
-/* Ibn Khaldoun guest experience — the service rail is an always-near counter. */
+/* Athar Cafe guest experience — an olive counter for calm, focused visits. */
 .menu-header { border-bottom-color: hsl(30 18% 38% / .18); }
 .brand-mark {
   width: 76px;
@@ -496,6 +496,86 @@ button { font: inherit; }
   .order-float { left: 12px; bottom: calc(78px + env(safe-area-inset-bottom)); height: 43px; min-width: 155px; gap: 7px; padding-inline: 9px; font-size: 10px; }
   .order-count { width: 22px; height: 22px; font-size: 10px; }
   .menu-content { padding-bottom: 138px; }
+}
+
+/* Athar Cafe identity: olive, warm cream, soft sage, and a quiet gold note. */
+:root {
+  --background: 42 44% 94%;
+  --foreground: 83 12% 17%;
+  --border: 79 15% 79%;
+  --card: 42 52% 97%;
+  --card-foreground: 83 12% 17%;
+  --card-border: 79 15% 79%;
+  --sidebar: 42 44% 94%;
+  --sidebar-foreground: 83 12% 17%;
+  --sidebar-border: 79 15% 79%;
+  --sidebar-primary: 105 11% 39%;
+  --sidebar-primary-foreground: 42 52% 96%;
+  --sidebar-accent: 105 10% 78%;
+  --sidebar-accent-foreground: 83 12% 17%;
+  --sidebar-ring: 105 11% 39%;
+  --popover: 42 52% 97%;
+  --popover-foreground: 83 12% 17%;
+  --popover-border: 79 15% 79%;
+  --primary: 105 11% 39%;
+  --primary-foreground: 42 52% 96%;
+  --secondary: 105 10% 78%;
+  --secondary-foreground: 83 12% 17%;
+  --muted: 80 15% 88%;
+  --muted-foreground: 82 8% 39%;
+  --accent: 39 48% 77%;
+  --accent-foreground: 83 12% 17%;
+  --input: 79 15% 79%;
+  --ring: 105 11% 39%;
+  --chart-1: 105 11% 39%;
+  --chart-2: 39 48% 77%;
+  --chart-3: 25 40% 44%;
+  --chart-4: 105 10% 70%;
+  --chart-5: 29 27% 65%;
+  --app-font-sans: 'Zain', sans-serif;
+  --app-font-serif: 'Amiri', serif;
+}
+body { font-family: 'Zain', sans-serif; }
+.menu-shell {
+  background:
+    radial-gradient(ellipse at 50% -20%, hsl(39 48% 77% / .35), transparent 55%),
+    #f7f2e8;
+}
+.menu-header {
+  max-width: none;
+  padding-inline: max(34px, calc((100vw - 1160px) / 2));
+  border-bottom-color: rgb(247 242 232 / .22);
+  color: #f7f2e8;
+  background: #5d6e58;
+}
+.menu-word { color: #f7f2e8; }
+.brand-mark {
+  border-color: rgb(211 182 135 / .76);
+  background: #f7f2e8;
+  box-shadow: 0 5px 16px rgb(39 49 36 / .18), inset 0 0 0 3px rgb(211 182 135 / .12);
+}
+.brand-mark img { mix-blend-mode: multiply; }
+.hamburger { border-color: rgb(247 242 232 / .46); }
+.hamburger span { background: #f7f2e8; }
+.section-title h2,.dish-name { color: #303b2d; }
+.small-rule,.menu-footer .footer-ornament { background: #d3b687; }
+.filter-button,.category-options button.selected,.modal-category,.modal-price,
+.stepper button,.cart-row-info b,.total-line b,.menu-retry,.confirmation .confirmed-total,
+.guest-action-icon { color: #5d6e58; }
+.filter-button:hover,.filter-button.is-active { background: rgb(211 182 135 / .3); }
+.order-float { background: #5d6e58; border-color: rgb(211 182 135 / .66); }
+.order-float:hover,.primary-action:hover,.guest-bill-submit:hover:not(:disabled) { background: #465642; }
+.order-float b { color: #e3cfaa; }
+.order-count { background: #d3b687; }
+.primary-action,.guest-bill-submit { background: #5d6e58; }
+.menu-footer { color: #697663; }
+.menu-footer>span:last-child { color: #5d6e58; }
+.guest-service-actions { background: rgb(76 91 71 / .98); border-top-color: rgb(211 182 135 / .38); }
+.guest-service-action:hover:not(:disabled) { border-color: rgb(211 182 135 / .34); background: rgb(247 242 232 / .08); }
+.guest-action-icon { border-color: rgb(211 182 135 / .48); color: #e2c99b; background: rgb(211 182 135 / .12); }
+.dish-card:focus-visible,.filter-button:focus-visible,.menu-word:focus-visible,.hamburger:focus-visible,button:focus-visible { outline-color: #5d6e58; }
+@media (max-width: 560px) {
+  .menu-header { padding-inline: 20px; }
 }
 
 /**

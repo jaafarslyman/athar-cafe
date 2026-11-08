@@ -51,9 +51,9 @@ type CartEntry = {
 };
 
 const money = (amount: number) => `${amount.toLocaleString("ar-SY")} ل.س`;
-const LAST_TABLE_NUMBER_KEY = "ben-khaldoun:last-table-number";
+const LAST_TABLE_NUMBER_KEY = "athar-cafe:last-table-number";
 const sessionStorageKey = (tableNumber: string) =>
-  `ben-khaldoun:table-session:${encodeURIComponent(tableNumber)}`;
+  `athar-cafe:table-session:${encodeURIComponent(tableNumber)}`;
 
 function readLastTableNumber() {
   try {
@@ -508,7 +508,7 @@ function CustomerMenu() {
           menu
         </button>
         <div className="brand-mark" data-testid="brand-logo">
-          <img src="/brand/logo.png" alt="بن خلدون" />
+          <img src="https://www.atharcafe.com/assets/Logo%20-%20dark-BYAWX3R6.png" alt="كافيه أثر" />
         </div>
         <button
           className="hamburger"
@@ -676,8 +676,8 @@ function CustomerMenu() {
 
         <footer className="menu-footer">
           <span className="footer-ornament" aria-hidden="true" />
-          <p>على مهل، وبكل محبة</p>
-          <span>بن خلدون</span>
+          <p>مساحة تصنع فرق</p>
+          <span>كافيه أثر</span>
         </footer>
       </section>
 
@@ -1160,7 +1160,7 @@ function CustomerMenu() {
           >
             <div className="drawer-head">
               <div>
-                <span className="modal-category">بن خلدون</span>
+                <span className="modal-category">كافيه أثر</span>
                 <h2>القائمة</h2>
               </div>
               <button
@@ -1194,7 +1194,7 @@ function CustomerMenu() {
               <span>عرض طلبك</span>
               <span className="nav-count">{count}</span>
             </button>
-            <p className="demo-caption">قائمة مقهى بن خلدون</p>
+            <p className="demo-caption">كافيه أثر · مساحة تصنع فرق</p>
           </aside>
         </div>
       )}

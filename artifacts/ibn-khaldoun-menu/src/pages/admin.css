@@ -11,7 +11,7 @@
   background:
     radial-gradient(ellipse at 94% 0%, hsl(39 46% 65% / .13), transparent 34rem),
     var(--admin-ground);
-  font-family: var(--app-font-sans, 'IBM Plex Sans Arabic', sans-serif);
+  font-family: var(--app-font-sans, 'Zain', sans-serif);
 }
 .admin-shell * { box-sizing: border-box; }
 .admin-shell button,.admin-shell input { font: inherit; }
@@ -295,7 +295,7 @@
   border-inline-end: 1px solid hsl(39 49% 62% / .3);
 }
 .admin-auth-wrap::after {
-  content: "بن خلدون";
+  content: "كافيه أثر";
   position: fixed;
   z-index: -1;
   inset-inline-start: 5vw;
@@ -406,3 +406,51 @@
   .admin-item-row { border-radius: 3px; }
   .admin-summary { min-height: 76px; }
 }
+
+/* Athar Cafe staff workspace palette */
+.admin-shell {
+  --admin-ink: #303b2d;
+  --admin-muted: #727c6d;
+  --admin-paper: #fbf8f1;
+  --admin-ground: #f1eee4;
+  --admin-line: #d0d3c5;
+  --admin-umber: #5d6e58;
+  --admin-gold: #d3b687;
+  color: var(--admin-ink);
+  background:
+    radial-gradient(ellipse at 100% 2%, rgb(211 182 135 / .16), transparent 30rem),
+    linear-gradient(135deg, #f7f2e8, #eeefe6);
+}
+.admin-auth-wrap::before {
+  background:
+    radial-gradient(ellipse at 28% 30%, rgb(211 182 135 / .16), transparent 18rem),
+    linear-gradient(160deg, #5d6e58, #465642);
+  border-inline-end-color: rgb(211 182 135 / .42);
+}
+.admin-auth-wrap::after { color: rgb(247 242 232 / .14); }
+.admin-brand-mark {
+  border-color: rgb(211 182 135 / .75);
+  background: #f7f2e8;
+  box-shadow: inset 0 0 0 3px rgb(211 182 135 / .12), 0 3px 12px rgb(48 59 45 / .1);
+}
+.admin-brand-mark img { padding: 4px; object-fit: contain; mix-blend-mode: multiply; }
+.admin-topbar {
+  border-bottom-color: rgb(211 182 135 / .35);
+  background: linear-gradient(105deg, #5d6e58, #465642);
+  box-shadow: 0 8px 24px rgb(48 59 45 / .1);
+}
+.admin-topbar .admin-brand-mark { background: rgb(247 242 232 / .94); }
+.admin-topbar .admin-brand-mark img { mix-blend-mode: normal; }
+.admin-topbar .admin-quiet-button { border-color: rgb(247 242 232 / .32); color: #f1dfbf; }
+.admin-section-nav button.is-active {
+  color: #4c6047;
+  background: rgb(166 178 160 / .25);
+  box-shadow: inset 0 -2px #5d6e58;
+}
+.admin-summary { border-inline-start-color: #5d6e58; background: rgb(251 248 241 / .76); }
+.admin-item-row { background: rgb(251 248 241 / .76); }
+.admin-item-row:hover { border-color: rgb(93 110 88 / .42); background: #fbf8f1; }
+.admin-primary-button { background: #5d6e58; }
+.admin-primary-button:hover:not(:disabled) { background: #465642; }
+.admin-auth-icon,.admin-empty-mark { color: #5d6e58; }
+.admin-live-dot { background: #70876a; box-shadow: 0 0 0 3px rgb(112 135 106 / .12); }

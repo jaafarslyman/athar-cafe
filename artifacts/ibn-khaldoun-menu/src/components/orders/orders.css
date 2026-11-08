@@ -170,3 +170,15 @@
   .guest-service-action strong { font-size: 9px; }
   .guest-service-action small { display: none; }
 }
+
+.guest-service-actions { background: rgb(76 91 71 / .98); border-top-color: rgb(211 182 135 / .38); }
+.guest-service-action { color: #f7f2e8; }
+.guest-service-action:hover:not(:disabled) { border-color: rgb(211 182 135 / .34); background: rgb(247 242 232 / .08); }
+.guest-action-icon { border-color: rgb(211 182 135 / .48); color: #e2c99b; background: rgb(211 182 135 / .12); }
+.guest-service-action strong { color: #f7f2e8; }
+.guest-service-action small { color: #d6ddcf; }
+.guest-order-kicker,.guest-receipt-row > b,.guest-receipt-grand strong { color: #5d6e58; }
+.guest-bill-submit { background: #5d6e58; }
+.guest-bill-submit:hover:not(:disabled) { background: #465642; }
+.guest-session-line-end > b,.guest-session-total strong { color: #5d6e58; }
+.guest-line-state,.guest-bill-requested { color: #53664e; }

@@ -511,3 +511,30 @@
   .orders-order-card { grid-template-columns: minmax(82px, 94px) minmax(0, 1fr); gap: 6px; }
   .orders-order-table { display: none; }
 }
+
+/* Athar Cafe order desk: sage status, olive controls, cream tickets. */
+.orders-admin {
+  --orders-ink: #303b2d;
+  --orders-muted: #727c6d;
+  --orders-paper: #fbf8f1;
+  --orders-line: #d0d3c5;
+  --orders-umber: #5d6e58;
+}
+.orders-eyebrow,.orders-order-table,.orders-order-open,
+.orders-session-value strong,.orders-order-card-foot b { color: #5d6e58; }
+.orders-order-serve,.orders-small-action {
+  border-color: rgb(93 110 88 / .4);
+  color: #53664e;
+  background: rgb(166 178 160 / .17);
+}
+.orders-order-serve:hover:not(:disabled),.orders-small-action:hover:not(:disabled) { background: rgb(166 178 160 / .3); }
+.orders-pay-action,.orders-pay-action.orders-card-pay,.orders-detail-pay {
+  border-color: #5d6e58;
+  background: #5d6e58;
+}
+.orders-pay-action:hover:not(:disabled),.orders-pay-action.orders-card-pay:hover:not(:disabled) { background: #465642; }
+.orders-table-stamp { border-color: rgb(211 182 135 / .75); color: #5d6e58; background: rgb(211 182 135 / .19); }
+.orders-overview { border-inline-start-color: #5d6e58; background: rgb(251 248 241 / .76); }
+.orders-session-card { background: rgb(251 248 241 / .82); }
+.orders-order-card { background: rgb(247 242 232 / .88); }
+.orders-request-card.bill { border-color: rgb(211 182 135 / .8); }

@@ -373,8 +373,8 @@ function AdminPanel() {
       <main className="admin-shell" dir="rtl">
         <div className="admin-auth-wrap admin-setup-wrap">
           <header className="admin-brand">
-            <span className="admin-brand-mark"><img src="/brand/logo.png" alt="" /></span>
-            <span>بن خلدون <small>إدارة القائمة</small></span>
+            <span className="admin-brand-mark"><img src="https://www.atharcafe.com/assets/Logo%20-%20dark-BYAWX3R6.png" alt="" /></span>
+            <span>كافيه أثر <small>إدارة القائمة</small></span>
           </header>
           <section className="admin-auth-card" role="alert" data-testid="status-supabase-not-configured">
             <div className="admin-auth-icon"><ShieldCheck size={22} /></div>
@@ -406,8 +406,8 @@ function AdminPanel() {
       <main className="admin-shell" dir="rtl">
         <div className="admin-auth-wrap">
           <header className="admin-brand">
-            <span className="admin-brand-mark"><img src="/brand/logo.png" alt="" /></span>
-            <span>بن خلدون <small>إدارة القائمة</small></span>
+            <span className="admin-brand-mark"><img src="https://www.atharcafe.com/assets/Logo%20-%20dark-BYAWX3R6.png" alt="" /></span>
+            <span>كافيه أثر <small>إدارة القائمة</small></span>
           </header>
           <section className="admin-auth-card">
             <div className="admin-auth-icon"><ShieldCheck size={22} /></div>
@@ -448,7 +448,7 @@ function AdminPanel() {
             </Form>
             <p className="admin-auth-foot">الدخول متاح لحسابات فريق الإدارة فقط.</p>
           </section>
-          <footer className="admin-auth-footer">بن خلدون <span>—</span> قائمة الحيّ، على مهل</footer>
+          <footer className="admin-auth-footer">كافيه أثر <span>—</span> مساحة تصنع فرق</footer>
         </div>
       </main>
     );
@@ -458,8 +458,8 @@ function AdminPanel() {
     <main className="admin-shell admin-workspace" dir="rtl">
       <div className="admin-topbar">
         <div className="admin-brand">
-          <span className="admin-brand-mark"><img src="/brand/logo.png" alt="" /></span>
-          <span>بن خلدون <small>إدارة المقهى</small></span>
+          <span className="admin-brand-mark"><img src="https://www.atharcafe.com/assets/Logo%20-%20light-CSqBZJYL.png" alt="" /></span>
+          <span>كافيه أثر <small>إدارة المقهى</small></span>
         </div>
         <div className="admin-session">
           <span className="admin-session-email" dir="ltr" data-testid="text-admin-email">{admin.email}</span>
@@ -549,7 +549,7 @@ function AdminPanel() {
             ))}
           </div>
         )}
-        <footer className="admin-list-foot"><span className="admin-foot-rule" />إدارة قائمة بن خلدون</footer>
+        <footer className="admin-list-foot"><span className="admin-foot-rule" />إدارة قائمة كافيه أثر</footer>
       </section>
 
       <AdminOrders isActive={activeAdminSection === "orders"} />

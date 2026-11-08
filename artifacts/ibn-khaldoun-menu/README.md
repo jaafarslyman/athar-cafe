@@ -1,6 +1,6 @@
-# بن خلدون — القائمة
+# كافيه أثر — القائمة والطلبات
 
-Arabic-first café menu and table-ordering app. Staff manage the menu at `/admin`; customers browse and order from `/`.
+Arabic-first café menu and table-ordering app for Athar Cafe (كافيه أثر). Staff manage the menu at `/admin`; customers browse and order from `/`.
 
 ## Supabase setup
 
@@ -16,7 +16,7 @@ Arabic-first café menu and table-ordering app. Staff manage the menu at `/admin
 
 4. Add `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` as Replit environment variables, then restart the web workflow.
 5. Open `/admin` directly and sign in with that Supabase user's credentials. There is no signup screen or link to the admin route from the customer menu.
-6. Replace the seeded example menu and prices with the café's current menu. Existing starter ingredients are imported as core ingredients; edit them to mark customer-excludable ingredients.
+6. Replace the seeded example menu and prices with Athar Cafe's current menu. Existing starter ingredients are imported as core ingredients; edit them to mark customer-excludable ingredients.
 
 The browser uses only Supabase's public anon key. RLS and database functions restrict menu changes and image uploads to users in `public.admin_users`. Customers can read available items and submit orders, but cannot read or edit orders. Never expose a Supabase `service_role` key in a `VITE_` variable.
 

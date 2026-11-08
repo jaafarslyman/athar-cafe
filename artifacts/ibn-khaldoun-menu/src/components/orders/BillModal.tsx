@@ -44,13 +44,13 @@ export default function BillModal({
     <div className="guest-order-overlay" role="presentation" onMouseDown={(event) => { if (event.target === event.currentTarget && !isSubmitting) onClose(); }}>
       <section className="guest-order-sheet guest-bill-sheet" dir="rtl" role="dialog" aria-modal="true" aria-labelledby="bill-modal-title" data-testid="dialog-bill">
         <header className="guest-order-head">
-          <div><span className="guest-order-kicker">بن خلدون · طاولة {session?.tableNumber ?? "—"}</span><h2 id="bill-modal-title">الحساب</h2></div>
+          <div><span className="guest-order-kicker">كافيه أثر · طاولة {session?.tableNumber ?? "—"}</span><h2 id="bill-modal-title">الحساب</h2></div>
           <button type="button" className="guest-order-close" onClick={onClose} disabled={isSubmitting} aria-label="إغلاق الحساب" data-testid="button-close-bill"><X size={19} /></button>
         </header>
         {!session ? <div className="guest-order-empty"><h3>الحساب غير متاح</h3><p>افتح جلسة طاولة لعرض الحساب.</p></div> : (
           <>
             <div className="guest-receipt" data-testid="receipt-session">
-              <div className="guest-receipt-brand"><span>بن خلدون</span><small>حساب الطاولة {session.tableNumber}</small></div>
+              <div className="guest-receipt-brand"><span>كافيه أثر</span><small>مساحة تصنع فرق · حساب الطاولة {session.tableNumber}</small></div>
               <div className="guest-receipt-lines">
                 {items.length === 0 ? <p className="guest-receipt-empty">لا توجد أصناف في الحساب بعد.</p> : items.map((item) => (
                   <div className="guest-receipt-row" key={item.id} data-testid={`row-receipt-item-${item.id}`}>
